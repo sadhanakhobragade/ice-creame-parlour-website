@@ -34,20 +34,22 @@
     <form>
         <div id="name-fields">
             <div id="first-name-field">
-                <input type="text" class="input-field" placeholder="First name">
+                <input type="text" id="name" class="input-field" name="name" required pattern="^[a-zA-Z\s]{3,50}$" title="Name must be 3-50 characters long and contain only letters and spaces." placeholder="First name" />
+                <!--<input type="text" class="input-field" placeholder="First name"> -->
             </div>
             <div id="last-name-field">
-                <input type="text" class="input-field" placeholder="Last name">
+                <input type="text" id="name" name="name" class="input-field" pattern="^[a-zA-Z\s]{3,50}$" title="Name must be 3-50 characters long and contain only letters and spaces." placeholder="Last name"/>
+               <!--<input type="text" class="input-field" placeholder="Last name"> --> 
             </div>
         </div>
 
         <div class="input-fields">
-            <input type="email" class="input-field" placeholder="Email">
+            <input type="email" class="input-field" placeholder="Email" required>
         </div>
 
         <div class="input-fields">
             <div class="password-container">
-                <input type="password" class="input-field" id="password-input-field" placeholder="Password">
+                <input type="password" class="input-field" id="password-input-field" placeholder="Password" required>
                 <i style="margin-top: 5px;" class="fa-solid fa-eye-slash" id="toggle-password"></i>
             </div>
             <!-- Password strength meter -->
@@ -57,8 +59,26 @@
             </div>
         </div>
         <div class="signin-btn">
-            <button>Continue</button>
+            <button onclick=" Gotohome()">Continue</button>
         </div>
+        <script>
+            function Gotohome() {
+            // Redirect to the home page (replace 'home.html' with your actual home page link)
+            window.location.href = 'products.html';
+        }
+            </script>
+        <!--
+          Sign-in Button
+    <div class="signin-btn">
+        <button onclick="goToHomePage()">Continue</button>
+    </div>
+
+    <script>
+        function goToHomePage() {
+            // Redirect to the home page (replace 'home.html' with your actual home page link)
+            window.location.href = 'home.html';
+        }
+        -->
     </form>
     <div class="terms">
         <br>
@@ -75,9 +95,9 @@
     </div>
     
     <div class="social-link-2">
-        <a href=""><img src="images/social-icons/google.png" width="25px" height="25px"></a>
-        <a href=""><img src="images/social-icons/Facebook.svg" width="25px" height="25px"></a>
-        <a href=""><img src="images/social-icons/github.png" width="25px" height="25px"></a>
+        <a href="https://accounts.google.com/signin" target="_blank"><img src="images/social-icons/google.png" width="25px" height="25px"></a>
+        <a href="https://www.facebook.com/login" target="_blank"><img src="images/social-icons/Facebook.svg" width="25px" height="25px"></a>
+        <a href="https://github.com/login" target="_blank"><img src="images/social-icons/github.png" width="25px" height="25px"></a>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
