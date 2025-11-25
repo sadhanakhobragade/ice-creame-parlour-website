@@ -1,4 +1,4 @@
-
+<!-- 
 # 🍦 Ice Cream Parlour Website 🍨
 
  ![Ice Cream Website Screenshot](/images/readme.png)
@@ -141,4 +141,4 @@ If you have any questions or need assistance, please feel free to reach out thro
 
 # 🌈 Join Us!
 
-
+ -->
